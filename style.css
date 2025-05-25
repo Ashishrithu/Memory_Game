@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f5e8ba;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: orange;
+}
+
+.game {
+  display: grid;
+  margin: 40px auto;
+  grid-template-columns: repeat(4, 120px);
+  grid-row-gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+#gameBoard div {
+    border-radius: 5px;
+  height: 150px;
+  width: 80px;
+  border: 2px solid rgb(151, 151, 202);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: brown;
+  background-color: #e5e5f7;
+}
+
+.cardback {
+  background-color: #aa8f8f;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%),
+    linear-gradient(225deg, #838e08 25%, transparent 25%),
+    linear-gradient(45deg, #f74444 25%, transparent 25%),
+    linear-gradient(315deg, #f74444 25%, #e5e5f7 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 10px 10px;
+  background-repeat: repeat;
+}
+
+#gameBoard div:hover {
+  cursor: pointer;
+  
+}
+
+.won {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+  color: orange;
+  width: 500px;
+  margin: 0px auto;
+}
+
+#resetBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #444cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+  background-color: #3333cc;
+  scale: 1.5;
+}
